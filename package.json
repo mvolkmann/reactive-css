@@ -1,0 +1,25 @@
+{
+  "name": "lit-app",
+  "version": "1.0.0",
+  "main": "./dist/lit-app.umd.js",
+  "module": "./dist/lit-app.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/lit-app.es.js",
+      "require": "./dist/lit-app.umd.js"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "reinstall": "rm -rf node_modules && npm install"
+  },
+  "dependencies": {
+    "lit": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.6",
+    "vite": "^7.3.1"
+  }
+}
