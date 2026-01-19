@@ -1,4 +1,4 @@
-import { LitElement, html, css } from "lit";
+import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
 @customElement("reactive-css")
@@ -11,7 +11,7 @@ export class ReactiveCSS extends LitElement {
     `,
   ];
 
-  @property() size = 18;
+  @property({ type: Number }) size = 18;
 
   #handleInput(event: Event) {
     const input = event.target as HTMLInputElement;
